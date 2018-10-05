@@ -14,4 +14,8 @@
 `date -s "DD MMM YYYY HH:MM:SS"`
 
 
-add
+## GIT
+
+`git add (your file)
+ git commit -m (your message)
+ git push`
