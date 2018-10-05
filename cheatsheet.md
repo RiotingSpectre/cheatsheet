@@ -16,9 +16,8 @@
 
 ## GIT
 
-`git add (your file)  
+```bash
+git add (your file)
  git commit -m (your message)  
- git push`  
-
-
-
+ git push
+```
