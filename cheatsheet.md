@@ -5,6 +5,9 @@
 ###Sending
 `nc DESTINATIONSERVER PORT < FILENAME`
 
+##haha
+`HAHA`
+
 ###Recieving
 `nc -l -p PORT > FILE`
 
