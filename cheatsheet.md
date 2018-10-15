@@ -5,6 +5,12 @@
 ###Sending
 `nc DESTINATIONSERVER PORT < FILENAME`
 
+##gobuster
+sudo gobuster -w /usr/share/wordlist/dirbuster/directory-list-lowercase-2.3-medium.txt http://<ip> -x html,php,txt,git -s 200,204,301,302,307,403,401
+ ##nmap
+#all scan`sudo nmap -p- -sV -T5 -sC -v <ip>`
+#ping sweep `sudo nmap -pn <ip>`
+
 ###Recieving
 `nc -l -p PORT > FILE`
 
