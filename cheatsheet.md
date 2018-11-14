@@ -2,10 +2,10 @@
 
 ## Sending And Receiving Files With Netcat
 
-###Sending
+### Sending
 `nc DESTINATIONSERVER PORT < FILENAME`
 
-###Recieving
+### Recieving
 `nc -l -p PORT > FILE`
 
 
