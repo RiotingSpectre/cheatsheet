@@ -19,7 +19,17 @@ sudo gobuster -w /usr/share/wordlist/dirbuster/directory-list-lowercase-2.3-medi
 ## Change The Time
 
 `date -s "DD MMM YYYY HH:MM:SS"`
+## Basic Linux commands
 
+```bash
+pwd
+```
+shows your current location
+
+```bash
+ls -alh
+```
+ a detailed list of LS
 
 ## GIT
 
