@@ -19,7 +19,7 @@
 ```bash
 git init in your desired directory
 git add (your file)
-git commit -m (your message)
+git commit -m (your Title)
 git push
 ```
 
